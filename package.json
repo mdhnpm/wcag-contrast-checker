@@ -1,0 +1,28 @@
+{
+  "name": "@mdhnpm/wcag-contrast-checker",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "git@github.com-mydatahack:mdhnpm/wcag-contrast-checker.git",
+  "author": "mydatahack <thon6thon6@hotmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "watch:build": "tsc --watch",
+    "lint-js": "eslint 'src/**/*.{ts,tsx,js,jsx}' --quiet",
+    "fix-js": "eslint 'src/**/*.{ts,tsx,js,jsx}' --fix --quiet",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
+    "eslint": "^7.30.0",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@mdhnpm/color-contrast-ratio-calculator": "^1.0.4"
+  }
+}
