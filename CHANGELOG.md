@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/mdhnpm/wcag-contrast-checker/compare/v1.0.1...v1.1.0) (2022-02-27)
+
+
+### Features
+
+* investigate version issue ([733d3c3](https://github.com/mdhnpm/wcag-contrast-checker/commit/733d3c3d4a141a79d76b1a7fb0716d4c45ab8cf0))
+
 ## [1.0.1](https://github.com/mdhnpm/wcag-contrast-checker/compare/v1.0.0...v1.0.1) (2022-02-27)
 
 
