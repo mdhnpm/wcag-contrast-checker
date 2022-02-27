@@ -1,6 +1,6 @@
 {
   "name": "@mdhnpm/wcag-contrast-checker",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "repository": "git@github.com:mdhnpm/wcag-contrast-checker.git",
   "author": "mdh",
