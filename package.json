@@ -6,7 +6,6 @@
   "author": "mdh",
   "license": "MIT",
   "private": false,
-  "path": "cz-conventional-changelog",
   "scripts": {
     "build": "tsc",
     "watch:build": "tsc --watch",
