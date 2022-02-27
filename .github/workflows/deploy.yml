@@ -18,31 +18,31 @@ jobs:
         run: |
           yarn test
 
-  run-release-github-npm:
-    needs: [build-and-test]
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node-version: [14.x]
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{ matrix.node-version }}
-          registry-url: "https://npm.pkg.github.com"
-          scope: "@mydatahack"
-      - name: Install and build
-        run: |
-          yarn install
-          yarn build
-      - name: Semantic Release
-        uses: cycjimmy/semantic-release-action@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  # run-release-github-npm:
+  #   needs: [build-and-test]
+  #   runs-on: ubuntu-latest
+  #   strategy:
+  #     matrix:
+  #       os: [ubuntu-latest]
+  #       node-version: [14.x]
+  #   steps:
+  #     - name: Checkout repo
+  #       uses: actions/checkout@v2
+  #     - name: Use Node.js ${{ matrix.node-version }}
+  #       uses: actions/setup-node@v2
+  #       with:
+  #         node-version: ${{ matrix.node-version }}
+  #         registry-url: "https://npm.pkg.github.com"
+  #         scope: "@mydatahack"
+  #     - name: Install and build
+  #       run: |
+  #         yarn install
+  #         yarn build
+  #     - name: Semantic Release
+  #       uses: cycjimmy/semantic-release-action@v2
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   run-release:
     needs: [build-and-test]

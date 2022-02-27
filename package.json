@@ -6,6 +6,9 @@
   "author": "mdh",
   "license": "MIT",
   "private": false,
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "build": "tsc",
     "watch:build": "tsc --watch",
