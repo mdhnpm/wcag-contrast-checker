@@ -16,7 +16,6 @@ const commitAnalyzerPlugin = [
     ],
   },
 ];
-
 const updateRepoPlugin = [
   "@semantic-release/git",
   {
