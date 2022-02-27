@@ -1,0 +1,18 @@
+# folders
+# adding src will delete dist/src, too. ./src doesn't work. src may need to be deleted in ci?
+src-with-css-loader
+public
+.github
+.husky
+.vscode
+
+# files
+yarn.lock
+yarn-error.log
+.releaserc.js
+CHANGELOG.md
+commitlint.config.js
+jest.config.js
+
+
+# Note that README.md and LICENSE will be always included even it is listed here!
