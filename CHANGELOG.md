@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/mdhnpm/wcag-contrast-checker/compare/v1.0.0...v1.0.1) (2022-02-27)
+
+
+### Bug Fixes
+
+* investigate package version not increasing ([0925736](https://github.com/mdhnpm/wcag-contrast-checker/commit/0925736052f7df332cda4c291571ed58778ca1d9))
+
 # 1.0.0 (2022-02-27)
 
 
